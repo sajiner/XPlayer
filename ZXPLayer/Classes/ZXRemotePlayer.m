@@ -56,7 +56,6 @@ static ZXRemotePlayer *_instance;
     if (isCache) {
         url = [url steamingURL];
     }
-    
     // 1. 资源的请求
     AVURLAsset *asset = [AVURLAsset assetWithURL:url];
     // 关于网络音频的请求, 是通过这个对象, 调用代理的相关方法, 进行加载的
